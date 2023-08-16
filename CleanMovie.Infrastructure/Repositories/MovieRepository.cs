@@ -17,7 +17,6 @@ namespace CleanMovie.Infrastructure.Repositories
             context = _context;
         }
 
-        //Need to do update and delete and then update to github
         public int CreateMovie(Movie movie)  //int return type given because to see whether records are updated or not
         {
             var movies = context.Movies.ToList();
